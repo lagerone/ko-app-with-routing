@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple knockout app with routing</title>
+</head>
+<body>
+
+	<div id="app" style="display: none;">
+		<h2>
+			<span data-bind="text: name"></span>
+		</h2>
+		<p data-bind="text: statusText"></p>
+		<p>
+			<a data-bind="attr: { href: startUrl }">Start</a>
+			<a data-bind="attr: { href: editUrl }">Edit</a>
+		</p>
+	</div>
+	
+	<script src="bower_components/requirejs/require.js" data-main="app/main"></script>
+</body>
+</html>
